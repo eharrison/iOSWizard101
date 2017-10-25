@@ -13,7 +13,7 @@ As we are installing the Library with CocoaPods, we have to follow a few steps t
 Make sure you open the project in the following path:
 
 ```ruby
-AwesomeLocalization/Example/AwesomeRepository.xcworkspace
+AwesomeRepository/Example/AwesomeRepository.xcworkspace
 ```
 
 XCode will open with 2 projects:
