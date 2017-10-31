@@ -64,6 +64,30 @@ pod 'AwesomeRepository', git: 'https://github.com/iOSWizards/AwesomeRepository.g
 6. In your project, update the Podfile to match the new AwesomeLocalization version.
 7. Run **pod install** and be happy :)
 
+### Deploying the library to CocoaPods repository
+
+If it's the first time that you're trying to deploy the pod to `trunk`, maybe there will be a few more steps to follow:
+
+1. Go to the project directory where you have the **.podspec** file, run `pod lib lint`, and see if everything goes on the track!
+
+1.1 If your library is not in the same Swift version of the CocoaPods, it will ask you to add a `.swift-version` file including your Swift version inside, simple as **4.0**. That's it!
+
+Library validated, and no more warnings, we can go ahead. 
+
+2. If it's the first time, you will need to register your machine as a trunk session, you can get it done by simple doing it: `pod trunk register leonardo@cocoapods.org 'Leonardo Ferreira' --description='macbook pro 15'` and then they are going to send a confirmation email for you, just click on the link and it's done.
+
+3. Everything ok, changes commited to your repository, you need to create a tag on GitHub for your library. Go to GitHub's page and create the tag corresponding to your latest `.podspec` library version.
+
+All good!
+
+4. Time to effectively push your lib to CocoaPods. For public libraries, run this command: `pod trunk push YOU_LIB_NAME.podspec` or for private repositories you can do: `pod repo push REPO YOU_LIB_NAME.podspec`.
+
+5. That's all. :tada::rocket: If everything went right, you are going to see a screen like this one: 
+
+#### Tips
+
+- It might take some time to upload your lib to the repository, around 24h. It's normal, the first time is always a pain.
+
 ## Author
 
 - Evandro Harrison Hoffmann, evandro@itsdayoff.com
