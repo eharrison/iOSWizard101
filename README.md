@@ -82,7 +82,9 @@ All good!
 
 4. Time to effectively push your lib to CocoaPods. For public libraries, run this command: `pod trunk push YOU_LIB_NAME.podspec` or for private repositories you can do: `pod repo push REPO YOU_LIB_NAME.podspec`.
 
-5. That's all. :tada::rocket: If everything went right, you are going to see a screen like this one: 
+5. That's all. :tada::rocket: If everything went right, you are going to see a screen like this one:
+
+<br />![alt text](https://github.com/iOSWizards/iOSWizard101/blob/master/pod-push-trunk.jpg)
 
 #### Tips
 
